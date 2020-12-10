@@ -4,153 +4,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="landing page of ViMos website" />    
+    <meta name="description" content="landing page of ViMos website" />
     <title>ViWos</title>
     <link rel="stylesheet" href="./style.css">
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
     <script src="./script.js"></script>
 
 </head>
 
 <body>
     <!-- navbar -->
-    <thead>
-        <div class="navbar">
-            <img class="mobile-only hamburger-menu" src="./assets/Hamburger_icon.svg.png" alt="menu icon" onclick="displayMenu()" >
-            <h1>ViMos</h1>
-            <div class="buttons-1">
-                <button class="desktop-only">Actualités</button>
-                <button class="desktop-only">Services</button>
-                <button class="desktop-only">Support</button>
-                <button class="desktop-only">A Propos</button>
-            </div>
-            <div class="contact-button">
-                <button id="contact-button" onclick="displayFormDialog()">Nous contacter</button>
-            </div>
+    <div class="navbar">
+        <img class="mobile-only hamburger-menu" src="./assets/Hamburger_icon.svg.png" alt="menu icon"
+            onclick="displayMenu()">
+        <h1>ViMos</h1>
+        <div class="buttons-1">
+            <button class="desktop-only">Actualités</button>
+            <button class="desktop-only">Services</button>
+            <button class="desktop-only">Support</button>
+            <button class="desktop-only">A Propos</button>
         </div>
-        <div id="hamburger-menu-links" class="mobile-only">
-            <button >Actualités</button>
-            <button >Services</button>
-            <button >Support</button>
-            <button >A Propos</button>
-        </div>
-    </thead>
-    <!-- Body -->
-    <tbody>
-        <section>
-
-            <div class="main-body-container">
-                <h2 style="margin-top:100px"> Qui sommes nous ?</h2>
-                <ol class="carousel-container">
-                    <li id="slide-1" class="slide">
-                        <img src="./assets/sample-image.jpg" alt="toucan">
-                        <div class="carousel-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
-                            ipsum
-                            amet inventore fugiat ut iure sit numquam vero officiis beatae neque, magnam quibusdam,
-                            cupiditate error repellat, pariatur mollitia vel animi?</div>
-                    </li>
-                    <li id="slide-2" class="slide">
-                        <img src="./assets/sample-image.jpg" alt="toucan">
-                        <div class="carousel-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
-                            maxime.
-                            Illo at autem nisi laudantium voluptates expedita natus sed officia, consectetur porro rerum
-                            ipsam, explicabo blanditiis dolor obcaecati delectus soluta?</div>
-                    </li>
-                    <li id="slide-3" class="slide">
-                        <img src="./assets/sample-image.jpg" alt="toucan">
-                        <div class="carousel-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis
-                            exercitationem cum commodi nemo rem delectus, similique voluptatem quia repellat enim, atque
-                            harum id accusantium vitae at veritatis molestiae debitis illo.</div>
-                    </li>
-                </ol>
-                <div class="carousel-buttons">
-                    <aside class="carousel__navigation">
-                        <ol class="carousel__navigation-list">
-                            <li class="carousel__navigation-item">
-                                <div class="carousel__navigation-button" onclick="navigateSlide(1)"></div>
-                            </li>
-                            <li class="carousel__navigation-item">
-                                <div class="carousel__navigation-button" onclick="navigateSlide(2)"></div>
-                            </li>
-                            <li class="carousel__navigation-item">
-                                <div class="carousel__navigation-button" onclick="navigateSlide(3)"></div>
-                            </li>
-                        </ol>
-                    </aside>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div style="display: flex; flex-direction:column; align-items:center;"><span> Les poles</span></div>
-            <div class="poles-buttons">
-                <div class="row-1">
-                    <button class="pole-button">Conseil</button>
-                    <button class="pole-button">Developpement</button>
-                </div>
-                <div class="row-2">
-                    <button class="pole-button">Maintenance</button>
-                    <button class="pole-button">Formation</button>
-                </div>
-            </div>
-        </section>
-    </tbody>
-
-    <!-- Footer -->
-    <tfoot>
-        <div class="bottom-container">
-            <div>
-                <h2>ViWos</h2>
-            </div>
-            <div>
-                <h2>© ViWos, Inc.</h2>
-                <a href="index.html">Viwos-team@Viwos.com</a>
-                <i class="fab fa-twitter">Contacter sur twitter</i>
-            </div>
-            <div class="bottom-links">
-                <a href="index.html">Politique de confidentialité</a>
-                <a href="index.html">Conditions d'utilisation</a>
-                <a href="index.html">Préference de cookies</a>
-            </div>
-        </div>
-    </tfoot>
-</body>
-
-<!-- dialog -->
-<div id="dialog">
-
-    <div id="contact-form">
-        <div class="upper-form">
-            <h2> Contacter</h2>
-            <i id="form-close-button" class="far fa-window-close"></i>
-        </div>
-        <hr>
-        <form  action="submit">
-            <label for="">Nom</label>
-            <input type="text">
-            <label for="">Email</label>
-            <input type="text">
-            <div class="contact-group">
-                <label for="">pole d'activité</label>
-                <div class="contact-button-group">
-                    <button type="button">Conseil</button>
-                    <button type="button">Developpement</button>
-                    <button type="button">Maintenance</button>
-                    <button type="button">Formation</button>
-                </div>
-            </div>
-        </form>
-        <hr>
-        <div class="form-bottom">
-            <button class="send-button" > Envoyer</button>
-            <i class="fab fa-twitter"></i>
+        <div class="contact-button">
+            <button id="contact-button" onclick="displayFormDialog()">Nous contacter</button>
         </div>
     </div>
-</div>
-    
+    <div id="hamburger-menu-links" class="mobile-only">
+        <button>Actualités</button>
+        <button>Services</button>
+        <button>Support</button>
+        <button>A Propos</button>
+    </div>
+    <!-- Body -->
+    <div class="main-body-container">
+        <h2 style="margin-top:100px"> Qui sommes nous ?</h2>
+        <ol class="carousel-container">
+            <li id="slide-1" class="slide">
+                <img src="./assets/sample-image.jpg" alt="toucan">
+                <div class="carousel-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
+                    ipsum
+                    amet inventore fugiat ut iure sit numquam vero officiis beatae neque, magnam quibusdam,
+                    cupiditate error repellat, pariatur mollitia vel animi?</div>
+            </li>
+            <li id="slide-2" class="slide">
+                <img src="./assets/sample-image.jpg" alt="toucan">
+                <div class="carousel-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
+                    maxime.
+                    Illo at autem nisi laudantium voluptates expedita natus sed officia, consectetur porro rerum
+                    ipsam, explicabo blanditiis dolor obcaecati delectus soluta?</div>
+            </li>
+            <li id="slide-3" class="slide">
+                <img src="./assets/sample-image.jpg" alt="toucan">
+                <div class="carousel-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis
+                    exercitationem cum commodi nemo rem delectus, similique voluptatem quia repellat enim, atque
+                    harum id accusantium vitae at veritatis molestiae debitis illo.</div>
+            </li>
+        </ol>
+        <div class="carousel-buttons">
+            <aside class="carousel__navigation">
+                <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                        <div class="carousel__navigation-button" onclick="navigateSlide(1)"></div>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <div class="carousel__navigation-button" onclick="navigateSlide(2)"></div>
+                    </li>
+                    <li class="carousel__navigation-item">
+                        <div class="carousel__navigation-button" onclick="navigateSlide(3)"></div>
+                    </li>
+                </ol>
+            </aside>
+        </div>
+    </div>
+
+    <div style="display: flex; flex-direction:column; align-items:center;"><span> Les poles</span></div>
+    <div class="poles-buttons">
+        <div class="row-1">
+            <button class="pole-button">Conseil</button>
+            <button class="pole-button">Developpement</button>
+        </div>
+        <div class="row-2">
+            <button class="pole-button">Maintenance</button>
+            <button class="pole-button">Formation</button>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="bottom-container">
+        <div>
+            <h2>ViWos</h2>
+        </div>
+        <div>
+            <h2>© ViWos, Inc.</h2>
+            <a href="index.html">Viwos-team@Viwos.com</a>
+            <i class="fab fa-twitter">Contacter sur twitter</i>
+        </div>
+        <div class="bottom-links">
+            <a href="index.html">Politique de confidentialité</a>
+            <a href="index.html">Conditions d'utilisation</a>
+            <a href="index.html">Préference de cookies</a>
+        </div>
+    </div>
+
+    <!-- dialog -->
+    <div id="dialog">
+        <div id="contact-form">
+            <div class="upper-form">
+                <h2> Contacter</h2>
+                <i id="form-close-button" class="far fa-window-close"></i>
+            </div>
+            <hr>
+            <form action="submit">
+                <label>Nom</label>
+                <input type="text">
+                <label>Email</label>
+                <input type="text">
+                <div class="contact-group">
+                    <label>pole d'activité</label>
+                    <div class="contact-button-group">
+                        <button type="button">Conseil</button>
+                        <button type="button">Developpement</button>
+                        <button type="button">Maintenance</button>
+                        <button type="button">Formation</button>
+                    </div>
+                </div>
+            </form>
+            <hr>
+            <div class="form-bottom">
+                <button class="send-button"> Envoyer</button>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
