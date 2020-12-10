@@ -290,6 +290,17 @@ body {
     display: none;
 }
 
+.upper-form{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.upper-form > i{
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
 .contact-group {
     display: flex;
     margin: 20px

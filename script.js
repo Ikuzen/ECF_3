@@ -24,7 +24,7 @@ function displayFormDialog(event){
 }
 
 window.onclick = (event)=>{
-    if(event.target.id === 'dialog') {
+    if(event.target.id === 'dialog' || event.target.id ==='form-close-button') {
         dialogElement = document.getElementById('dialog');
         dialogElement.style.display = 'none';
     }
