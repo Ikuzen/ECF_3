@@ -140,6 +140,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
+    padding-right: 30px;
     display: flex;
     counter-reset: item;
     scroll-behavior: smooth;
@@ -183,9 +184,10 @@ body {
 .carousel__navigation-list,
 .carousel__navigation-item {
     display: inline-block;
-
 }
-
+.carousel__navigation-item > div{
+    cursor: pointer;
+}
 .carousel__navigation-button {
     display: inline-block;
     width: 1.5rem;
@@ -247,6 +249,11 @@ body {
     .slide {
         flex-direction: column !important;
     }
+
+    .slide > img {
+        height: auto;
+        width: -webkit-fill-available;
+    }
 }
 
 /* Footer */
@@ -269,13 +276,16 @@ body {
     justify-content: center;
 }
 
-.bottom-container>.bottom-links>a {
+
+
+.bottom-container> div >a {
     color: seashell;
     font-weight: lighter;
     font-size: small;
     padding-right: 5px;
     padding-left: 5px;
 }
+
 
 
 /* dialog */

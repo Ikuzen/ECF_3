@@ -1,6 +1,5 @@
 function navigateSlide(number){
     elements = document.getElementsByClassName('slide');
-    console.log(elements)
     for(let i=1; i<=3; i++){
         if(i === number){
             elements[i-1].style.display = 'flex';
