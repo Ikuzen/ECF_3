@@ -16,6 +16,16 @@ function displayMenu(event){
 }
 
 function displayFormDialog(event){
-    element = document.getElementById('contact-form')
-    element.style.display = 'block'
+    dialogElement = document.getElementById('dialog');
+    element = document.getElementById('contact-form');
+    dialogElement.style.display = 'block'
+    element.style.display = 'block';
+    
+}
+
+window.onclick = (event)=>{
+    if(event.target.id === 'dialog') {
+        dialogElement = document.getElementById('dialog');
+        dialogElement.style.display = 'none';
+    }
 }

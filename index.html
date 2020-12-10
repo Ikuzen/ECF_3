@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ViWos</title>
     <link rel="stylesheet" href="./style.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
     <script src="./script.js"></script>
 
 </head>
@@ -20,17 +26,17 @@
                 <button class="desktop-only">Actualités</button>
                 <button class="desktop-only">Services</button>
                 <button class="desktop-only">Support</button>
-                <button class="desktop-only">About</button>
+                <button class="desktop-only">A Propos</button>
             </div>
             <div class="contact-button">
-                <button onclick="displayFormDialog()">Nous contacter</button>
+                <button id="contact-button" onclick="displayFormDialog()">Nous contacter</button>
             </div>
         </div>
         <div id="hamburger-menu-links" class="mobile-only">
             <button >Actualités</button>
             <button >Services</button>
             <button >Support</button>
-            <button >About</button>
+            <button >A Propos</button>
         </div>
     </thead>
     <!-- Body -->
@@ -103,6 +109,7 @@
             <div>
                 <h2>© ViWos, Inc.</h2>
                 <a>Viwos-team@Viwos.com</a>
+                <i class="fab fa-twitter"></i>
             </div>
             <div class="bottom-links">
                 <a href="">Politique de confidentialité</a>
@@ -135,8 +142,9 @@
             </div>
         </form>
         <hr>
-        <div style="display: flex; justify-content: center;">
-            <button class="send-button" > envoyer</button>
+        <div class="form-bottom">
+            <button class="send-button" > Envoyer</button>
+            <i class="fab fa-twitter"></i>
         </div>
     </div>
 </div>

@@ -6,37 +6,40 @@
 
 /* header */
 a,
-button {
+button,
+i {
     cursor: pointer;
 }
-body{
+
+body {
     margin: 0;
 }
+
 .navbar {
     display: flex;
-    position: fixed; 
-    top:0; 
-    z-index: 100; 
+    position: fixed;
+    top: 0;
+    z-index: 100;
     width: 99%;
     border: solid 3px gray;
     background-color: var(--nav-background-color);
 }
 
-#hamburger-menu-links{
+#hamburger-menu-links {
     display: none;
     position: fixed;
-    top:86px; 
+    top: 86px;
     flex-direction: column;
-  }
+}
 
-#hamburger-menu-links > button{
+#hamburger-menu-links>button {
     width: 100vh;
     min-height: 42px;
     display: flex;
     align-items: center;
     font-size: large;
     background-color: silver;
-  }
+}
 
 .navbar>h1 {
     margin-right: 10px;
@@ -94,14 +97,15 @@ body{
     display: none;
 }
 
-@media(min-width: 581px){
+@media(min-width: 581px) {
     .mobile-only {
-        display: none!important;
+        display: none !important;
     }
 }
+
 @media(max-width : 580px) {
     .desktop-only {
-        display: none!important;
+        display: none !important;
     }
 
     .mobile-only {
@@ -112,8 +116,8 @@ body{
         margin-left: 0px;
     }
 
-    #contact-form{
-        left: 20vw!important;
+    #contact-form {
+        left: 20vw !important;
     }
 }
 
@@ -124,7 +128,7 @@ body{
     flex-direction: column;
 }
 
-.main-body-container > h2 {
+.main-body-container>h2 {
     display: flex;
     justify-content: center;
 }
@@ -224,54 +228,7 @@ body{
     background-color: rgb(76, 65, 225);
 }
 
-#contact-form{
-    position: fixed;
-    top: 20vh;
-    left: 40vw;
-    background-color: aliceblue;
-    border: solid gray;
-    padding: 10px;
-    display: none;
-}
-.contact-group{
-    display: flex;
-    margin: 20px
-}
 
-.contact-group > label {
-    margin-right: 10px;
-}
-
-#contact-form > form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.contact-button-group{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-button-group > button{
-    height: 20px;
-    min-width: 120px;
-    border-radius: 5px;
-    background-color: royalblue;
-    font-weight: bolder;
-    color: seashell;
-}
-
-.send-button{
-    /* height: 30px; */
-    border-radius: 5px;
-    background-color: skyblue;
-    font-weight: bolder;
-    font-size: 2em;
-    color: black;
-}
 @media(max-width : 520px) {
     .poles-buttons>.row-1 {
         flex-direction: column;
@@ -287,8 +244,8 @@ body{
         padding-left: 70px;
     }
 
-    .slide{
-        flex-direction: column!important;
+    .slide {
+        flex-direction: column !important;
     }
 }
 
@@ -307,15 +264,89 @@ body{
     flex-direction: column;
 }
 
-.bottom-container> .bottom-links {
+.bottom-container>.bottom-links {
     flex-direction: row;
     justify-content: center;
 }
 
-.bottom-container> .bottom-links > a {
+.bottom-container>.bottom-links>a {
     color: seashell;
     font-weight: lighter;
     font-size: small;
     padding-right: 5px;
     padding-left: 5px;
+}
+
+
+/* dialog */
+
+#contact-form {
+    position: fixed;
+    top: 20vh;
+    left: 40vw;
+    background-color: aliceblue;
+    border: solid gray;
+    padding: 10px;
+    display: none;
+}
+
+.contact-group {
+    display: flex;
+    margin: 20px
+}
+
+.contact-group>label {
+    margin-right: 10px;
+}
+
+#contact-form>form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.form-bottom>.send-button {
+    border-radius: 5px;
+    background-color: skyblue;
+    font-weight: bolder;
+    font-size: 2em;
+    color: black;
+    margin-right: 10px
+}
+
+.form-bottom>i {
+    font-size: 2em;
+}
+
+.contact-button-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-button-group>button {
+    height: 20px;
+    min-width: 120px;
+    border-radius: 5px;
+    background-color: royalblue;
+    font-weight: bolder;
+    color: seashell;
+}
+
+#dialog {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
